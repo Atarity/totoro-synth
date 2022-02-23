@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -67,9 +67,9 @@
 <layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -77,7 +77,7 @@
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="no"/>
@@ -483,6 +483,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="SF_SKU" value="COM-09288"/>
 <attribute name="VALUE" value="10k"/>
 </technology>
+</technologies>
+</device>
+<device name="-GATE-SWAPPED" package="POT-PTH-ALPS-KIT">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="E" pad="P$3"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -9330,8 +9340,8 @@ Siemens, distributor Buerklin, 11G766</description>
 </class>
 </classes>
 <parts>
-<part name="O1FRQ" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-PTH-9MM-1/20W-20%-KIT" value="100k(B)"/>
-<part name="BAL" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-PTH-9MM-1/20W-20%-KIT" value="100k(B)"/>
+<part name="O1FRQ" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
+<part name="BAL" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="1k"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="100k"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="1k"/>
@@ -9365,21 +9375,21 @@ Siemens, distributor Buerklin, 11G766</description>
 <part name="T1" library="User-Submitted" deviceset="TRANSISTOR_PNP" device="BC558" value="BC546A"/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R19" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
-<part name="CUT" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-PTH-9MM-1/20W-20%-KIT" value="100k(B)"/>
+<part name="CUT" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
 <part name="M10" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="1uF"/>
-<part name="OLVL" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-PTH-9MM-1/20W-20%-KIT" value="100k(A)"/>
+<part name="OLVL" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="AUDIO_JACK_3.5MM" device="DCI" value="AUDIO_JACK_3.5MMDCI"/>
-<part name="O1FRQ1" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-PTH-9MM-1/20W-20%-KIT" value="100k(B)"/>
+<part name="O1FRQ1" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
 <part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
 <part name="G1" library="SparkFun-Switches" deviceset="MECHANICAL-KEYBOARD" device="1U"/>
-<part name="O1FRQ2" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-PTH-9MM-1/20W-20%-KIT" value="100k(B)"/>
+<part name="O1FRQ2" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
 <part name="G2" library="SparkFun-Switches" deviceset="MECHANICAL-KEYBOARD" device="1U"/>
 <part name="G3" library="SparkFun-Switches" deviceset="MECHANICAL-KEYBOARD" device="1U"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
-<part name="O1FRQ3" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-PTH-9MM-1/20W-20%-KIT" value="100k(B)"/>
+<part name="O1FRQ3" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
 <part name="M3" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="M4" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="100k"/>
@@ -9419,12 +9429,10 @@ Siemens, distributor Buerklin, 11G766</description>
 </plain>
 <instances>
 <instance part="O1FRQ" gate="G$1" x="7.62" y="66.04" smashed="yes">
-<attribute name="NAME" x="10.668" y="65.786" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="6.35" y="66.04" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="-1.778" y="66.294" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="BAL" gate="G$1" x="241.3" y="66.04" smashed="yes" rot="MR180">
 <attribute name="NAME" x="244.348" y="66.294" size="1.778" layer="95" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="240.03" y="66.04" size="1.778" layer="95" font="vector" rot="MR270" align="bottom-center"/>
 </instance>
 <instance part="R1" gate="G$1" x="7.62" y="48.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="6.096" y="48.26" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -9486,15 +9494,15 @@ Siemens, distributor Buerklin, 11G766</description>
 <attribute name="PART" x="154.305" y="102.87" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="R7" gate="G$1" x="137.16" y="53.34" smashed="yes" rot="R270">
-<attribute name="NAME" x="138.684" y="53.34" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="135.636" y="53.34" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+<attribute name="NAME" x="132.842" y="53.848" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="132.842" y="51.816" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="SUPPLY4" gate="GND" x="137.16" y="40.64" smashed="yes">
 <attribute name="VALUE" x="135.255" y="37.465" size="1.778" layer="96"/>
 </instance>
 <instance part="M7" gate="G$1" x="167.64" y="71.12" smashed="yes" rot="R90">
 <attribute name="VALUE" x="172.466" y="68.58" size="1.778" layer="96" font="vector" rot="R90"/>
-<attribute name="NAME" x="164.592" y="68.58" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="NAME" x="163.83" y="70.612" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="MOD" gate="B" x="200.66" y="83.82" smashed="yes" rot="R270">
 <attribute name="PART" x="198.755" y="78.74" size="1.778" layer="95"/>
@@ -9565,19 +9573,17 @@ Siemens, distributor Buerklin, 11G766</description>
 </instance>
 <instance part="CUT" gate="G$1" x="325.12" y="109.22" smashed="yes" rot="MR0">
 <attribute name="NAME" x="322.072" y="108.966" size="1.778" layer="95" font="vector" rot="MR270"/>
-<attribute name="VALUE" x="326.39" y="109.22" size="1.778" layer="95" font="vector" rot="MR90" align="bottom-center"/>
 </instance>
 <instance part="M10" gate="G$1" x="312.42" y="96.52" smashed="yes" rot="R180">
 <attribute name="VALUE" x="314.96" y="101.346" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="314.96" y="93.472" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="C7" gate="G$1" x="314.96" y="45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="314.325" y="46.736" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="319.151" y="46.736" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="314.452" y="50.927" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="321.564" y="50.927" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="OLVL" gate="G$1" x="337.82" y="35.56" smashed="yes">
 <attribute name="NAME" x="335.026" y="37.592" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="332.74" y="31.75" size="1.778" layer="95" font="vector" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY10" gate="GND" x="337.82" y="17.78" smashed="yes">
 <attribute name="VALUE" x="335.915" y="14.605" size="1.778" layer="96"/>
@@ -9586,38 +9592,35 @@ Siemens, distributor Buerklin, 11G766</description>
 <attribute name="NAME" x="363.22" y="24.892" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="375.92" y="38.1" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="O1FRQ1" gate="G$1" x="60.96" y="-48.514" smashed="yes" rot="MR180">
-<attribute name="NAME" x="51.054" y="-49.022" size="1.778" layer="95" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="55.88" y="-47.244" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
+<instance part="O1FRQ1" gate="G$1" x="60.96" y="-48.26" smashed="yes" rot="MR180">
+<attribute name="NAME" x="51.054" y="-48.768" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
-<instance part="R10" gate="G$1" x="60.96" y="-63.754" smashed="yes" rot="R270">
-<attribute name="NAME" x="62.484" y="-63.754" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="59.436" y="-63.754" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+<instance part="R10" gate="G$1" x="60.96" y="-63.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="57.15" y="-62.992" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="56.896" y="-64.77" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="G1" gate="G$1" x="63.5" y="-78.994" smashed="yes" rot="R90">
-<attribute name="NAME" x="61.976" y="-78.994" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<instance part="G1" gate="G$1" x="63.5" y="-78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="56.642" y="-74.168" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 </instance>
-<instance part="O1FRQ2" gate="G$1" x="81.28" y="-48.514" smashed="yes" rot="MR180">
-<attribute name="NAME" x="71.374" y="-49.022" size="1.778" layer="95" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="76.2" y="-47.244" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
+<instance part="O1FRQ2" gate="G$1" x="81.28" y="-48.26" smashed="yes" rot="MR180">
+<attribute name="NAME" x="71.374" y="-48.768" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
-<instance part="R11" gate="G$1" x="81.28" y="-63.754" smashed="yes" rot="R270">
-<attribute name="NAME" x="82.804" y="-63.754" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="79.756" y="-63.754" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+<instance part="R11" gate="G$1" x="81.28" y="-63.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="77.724" y="-62.992" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="77.47" y="-64.262" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="G2" gate="G$1" x="83.82" y="-78.994" smashed="yes" rot="R90">
-<attribute name="NAME" x="82.296" y="-78.994" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<instance part="G2" gate="G$1" x="83.82" y="-78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="76.962" y="-73.914" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 </instance>
-<instance part="G3" gate="G$1" x="101.6" y="-78.994" smashed="yes" rot="R90">
-<attribute name="NAME" x="100.076" y="-78.994" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<instance part="G3" gate="G$1" x="101.6" y="-78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="94.488" y="-73.914" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 </instance>
-<instance part="R12" gate="G$1" x="99.06" y="-63.754" smashed="yes" rot="R270">
-<attribute name="NAME" x="100.584" y="-63.754" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="97.536" y="-63.754" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+<instance part="R12" gate="G$1" x="99.06" y="-63.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="95.504" y="-62.992" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="95.25" y="-64.262" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="O1FRQ3" gate="G$1" x="99.06" y="-48.514" smashed="yes" rot="MR180">
-<attribute name="NAME" x="89.154" y="-49.022" size="1.778" layer="95" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="93.98" y="-47.244" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
+<instance part="O1FRQ3" gate="G$1" x="99.06" y="-48.26" smashed="yes" rot="MR180">
+<attribute name="NAME" x="89.154" y="-48.768" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
 <instance part="M3" gate="G$1" x="40.64" y="-38.1" smashed="yes">
 <attribute name="VALUE" x="38.1" y="-42.926" size="1.778" layer="96" font="vector"/>
@@ -9631,24 +9634,24 @@ Siemens, distributor Buerklin, 11G766</description>
 <attribute name="NAME" x="91.44" y="-1.524" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="91.44" y="1.524" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
-<instance part="R8" gate="G$1" x="63.5" y="-10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="63.5" y="-11.684" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="63.5" y="-8.636" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
+<instance part="R8" gate="G$1" x="50.8" y="-10.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="50.8" y="-11.684" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="50.8" y="-8.636" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
-<instance part="C3" gate="G$1" x="76.2" y="-15.24" smashed="yes" rot="R270">
-<attribute name="NAME" x="76.708" y="-14.478" size="1.778" layer="95"/>
-<attribute name="VALUE" x="76.708" y="-17.907" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="60.96" y="-15.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="61.468" y="-14.478" size="1.778" layer="95"/>
+<attribute name="VALUE" x="61.468" y="-17.907" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY11" gate="GND" x="53.34" y="-20.32" smashed="yes">
-<attribute name="VALUE" x="51.435" y="-23.495" size="1.778" layer="96"/>
+<instance part="SUPPLY11" gate="GND" x="38.1" y="-20.32" smashed="yes">
+<attribute name="VALUE" x="36.195" y="-23.495" size="1.778" layer="96"/>
 </instance>
-<instance part="M5" gate="G$1" x="66.04" y="-25.4" smashed="yes" rot="R90">
-<attribute name="VALUE" x="70.866" y="-27.94" size="1.778" layer="96" font="vector" rot="R90"/>
-<attribute name="NAME" x="62.992" y="-27.94" size="1.778" layer="95" font="vector" rot="R90"/>
+<instance part="M5" gate="G$1" x="50.8" y="-25.4" smashed="yes" rot="R90">
+<attribute name="VALUE" x="55.626" y="-27.94" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="47.498" y="-25.654" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="M6" gate="G$1" x="81.28" y="-25.4" smashed="yes" rot="R90">
-<attribute name="VALUE" x="86.106" y="-27.94" size="1.778" layer="96" font="vector" rot="R90"/>
-<attribute name="NAME" x="78.232" y="-27.94" size="1.778" layer="95" font="vector" rot="R90"/>
+<instance part="M6" gate="G$1" x="68.58" y="-25.4" smashed="yes" rot="R90">
+<attribute name="VALUE" x="73.406" y="-27.94" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="65.278" y="-26.162" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="M2" gate="G$1" x="81.28" y="10.16" smashed="yes" rot="R270">
 <attribute name="VALUE" x="76.454" y="12.7" size="1.778" layer="96" font="vector" rot="R270"/>
@@ -9679,36 +9682,36 @@ Siemens, distributor Buerklin, 11G766</description>
 <attribute name="PART" x="254.635" y="-31.75" size="1.778" layer="95"/>
 </instance>
 <instance part="R20" gate="G$1" x="297.18" y="-38.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="295.656" y="-38.1" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="298.704" y="-38.1" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<attribute name="NAME" x="293.116" y="-35.56" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="293.116" y="-40.386" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
 <instance part="LED1" gate="G$1" x="297.18" y="-50.8" smashed="yes">
-<attribute name="NAME" x="300.736" y="-55.372" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="302.895" y="-55.372" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="305.308" y="-49.276" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="312.42" y="-52.197" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="BATT1" gate="G$1" x="220.98" y="-38.1" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="-30.48" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="NAME" x="213.106" y="-34.29" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="BATT2" gate="G$1" x="220.98" y="-55.88" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="-48.26" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="NAME" x="212.598" y="-52.324" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="SUPPLY12" gate="GND" x="287.02" y="-50.8" smashed="yes">
 <attribute name="VALUE" x="285.115" y="-53.975" size="1.778" layer="96"/>
 </instance>
 <instance part="GND" gate="G$1" x="205.74" y="-45.72" smashed="yes">
 <attribute name="VALUE" x="203.2" y="-50.546" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="203.2" y="-42.672" size="1.778" layer="95" font="vector"/>
+<attribute name="NAME" x="197.866" y="-46.228" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="SUPPLY14" gate="G$1" x="279.4" y="-25.4" smashed="yes">
 <attribute name="VALUE" x="277.495" y="-22.225" size="1.778" layer="96"/>
 </instance>
 <instance part="V+" gate="G$1" x="236.22" y="-17.78" smashed="yes" rot="R270">
 <attribute name="VALUE" x="231.394" y="-15.24" size="1.778" layer="96" font="vector" rot="R270"/>
-<attribute name="NAME" x="239.268" y="-15.24" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="NAME" x="229.87" y="-18.542" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="V-" gate="G$1" x="236.22" y="-73.66" smashed="yes" rot="R90">
 <attribute name="VALUE" x="241.046" y="-76.2" size="1.778" layer="96" font="vector" rot="R90"/>
-<attribute name="NAME" x="233.172" y="-76.2" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="NAME" x="232.41" y="-72.136" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="SUPPLY13" gate="G$1" x="325.12" y="93.98" smashed="yes">
 <attribute name="VALUE" x="323.215" y="89.281" size="1.778" layer="96"/>
@@ -9721,7 +9724,7 @@ Siemens, distributor Buerklin, 11G766</description>
 </instance>
 <instance part="M1" gate="G$1" x="114.3" y="45.72" smashed="yes" rot="R90">
 <attribute name="VALUE" x="119.126" y="43.18" size="1.778" layer="96" font="vector" rot="R90"/>
-<attribute name="NAME" x="111.252" y="43.18" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="NAME" x="110.744" y="45.212" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="M8" gate="G$1" x="241.3" y="109.22" smashed="yes">
 <attribute name="VALUE" x="238.76" y="104.394" size="1.778" layer="96" font="vector"/>
@@ -9792,17 +9795,17 @@ Siemens, distributor Buerklin, 11G766</description>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="-10.16" x2="53.34" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-10.16" x2="53.34" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-10.16" x2="38.1" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-10.16" x2="38.1" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="-15.24" x2="66.04" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-15.24" x2="50.8" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
-<wire x1="66.04" y1="-15.24" x2="71.12" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-17.78" x2="53.34" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="53.34" y="-15.24"/>
+<wire x1="50.8" y1="-15.24" x2="55.88" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-17.78" x2="38.1" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="38.1" y="-15.24"/>
 <pinref part="M5" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="-17.78" x2="66.04" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="66.04" y="-15.24"/>
+<wire x1="50.8" y1="-17.78" x2="50.8" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="50.8" y="-15.24"/>
 </segment>
 <segment>
 <pinref part="BATT1" gate="G$1" pin="+"/>
@@ -10201,69 +10204,68 @@ Siemens, distributor Buerklin, 11G766</description>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="G1" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="-71.374" x2="60.96" y2="-68.834" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-71.12" x2="60.96" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="G2" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="-68.834" x2="81.28" y2="-71.374" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-68.58" x2="81.28" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="G3" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="-68.834" x2="99.06" y2="-71.374" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-68.58" x2="99.06" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="N$31" class="0">
 <segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="-15.24" x2="68.58" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="M6" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="-15.24" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-15.24" x2="83.82" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-17.78" x2="68.58" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="68.58" y="-15.24"/>
+<pinref part="IC1" gate="A" pin="-IN"/>
 <wire x1="48.26" y1="-38.1" x2="60.96" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-38.1" x2="68.58" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-38.1" x2="81.28" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="-38.1" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="-38.1" x2="99.06" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="-38.1" x2="109.22" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="-38.1" x2="109.22" y2="-48.514" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-38.1" x2="109.22" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="M3" gate="G$1" pin="1"/>
 <pinref part="O1FRQ1" gate="G$1" pin="A"/>
-<wire x1="60.96" y1="-40.894" x2="60.96" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-40.64" x2="60.96" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="60.96" y="-38.1"/>
 <pinref part="O1FRQ2" gate="G$1" pin="A"/>
-<wire x1="81.28" y1="-40.894" x2="81.28" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-40.64" x2="81.28" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="81.28" y="-38.1"/>
 <pinref part="O1FRQ3" gate="G$1" pin="A"/>
-<wire x1="99.06" y1="-40.894" x2="99.06" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-40.64" x2="99.06" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="99.06" y="-38.1"/>
 <pinref part="O1FRQ3" gate="G$1" pin="S"/>
-<wire x1="104.14" y1="-48.514" x2="109.22" y2="-48.514" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-48.26" x2="109.22" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="O1FRQ1" gate="G$1" pin="S"/>
-<wire x1="66.04" y1="-48.514" x2="68.58" y2="-48.514" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-48.514" x2="68.58" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-48.26" x2="68.58" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-48.26" x2="68.58" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="68.58" y="-38.1"/>
 <pinref part="O1FRQ2" gate="G$1" pin="S"/>
-<wire x1="86.36" y1="-48.514" x2="88.9" y2="-48.514" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="-48.514" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-48.26" x2="88.9" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-48.26" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="88.9" y="-38.1"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="-15.24" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="M6" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="-15.24" x2="83.82" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-17.78" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-15.24" x2="81.28" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="81.28" y="-15.24"/>
-<pinref part="IC1" gate="A" pin="-IN"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="-10.16" x2="81.28" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-10.16" x2="81.28" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="-10.16" x2="83.82" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="0" x2="81.28" y2="0" width="0.1524" layer="91"/>
@@ -10283,13 +10285,13 @@ Siemens, distributor Buerklin, 11G766</description>
 <wire x1="81.28" y1="-88.9" x2="99.06" y2="-88.9" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="-88.9" x2="134.62" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="G1" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="-86.614" x2="60.96" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-86.36" x2="60.96" y2="-88.9" width="0.1524" layer="91"/>
 <junction x="60.96" y="-88.9"/>
 <pinref part="G2" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="-86.614" x2="81.28" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-86.36" x2="81.28" y2="-88.9" width="0.1524" layer="91"/>
 <junction x="81.28" y="-88.9"/>
 <pinref part="G3" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="-86.614" x2="99.06" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-86.36" x2="99.06" y2="-88.9" width="0.1524" layer="91"/>
 <junction x="99.06" y="-88.9"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="0" x2="109.22" y2="0" width="0.1524" layer="91"/>
@@ -10352,21 +10354,21 @@ Siemens, distributor Buerklin, 11G766</description>
 <segment>
 <pinref part="O1FRQ3" gate="G$1" pin="E"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="-56.134" x2="99.06" y2="-58.674" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-55.88" x2="99.06" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="O1FRQ2" gate="G$1" pin="E"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="-56.134" x2="81.28" y2="-58.674" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-55.88" x2="81.28" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="O1FRQ1" gate="G$1" pin="E"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="-56.134" x2="60.96" y2="-58.674" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-55.88" x2="60.96" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
