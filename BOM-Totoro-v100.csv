@@ -1,0 +1,26 @@
+Qty,Designator,Value,Package,Device,Chip-i-Dip,Ali,LCSC
+2,"R1, R3",1k,"AXIAL-0.3, 0.25W","Thru-hole resistor 0.25W, 5%",,,
+11,"R2, R4, R6, R7, R8, R9, R13, R15, R16, R17, R18",100k,"AXIAL-0.3, 0.25W","Thru-hole resistor 0.25W, 5%",,,
+1,R5,270k,"AXIAL-0.3, 0.25W","Thru-hole resistor 0.25W, 5%",,,
+5,"R10, R11, R12, R14, R19",10k,"AXIAL-0.3, 0.25W","Thru-hole resistor 0.25W, 5%",,,
+1,R20,470,"AXIAL-0.3, 0.25W","Thru-hole resistor 0.25W, 5%",,,
+6,"BAL, CUT, O1FRQ, O1FRQ1, O1FRQ2, O1FRQ3",10k(B),"9mm, best with 25mm overall height and star shaft",RV09 pot with B char,,RK09,C3020616 ???
+1,OLVL,10k(A),"9mm, best with 25mm overall height and star shaft",RV09 pot with A char,,,
+1,C1,10n,C050-024X044,Ceramic,,,
+2,"C2, C3",100n,C050-024X044,Ceramic,,,
+2,"C4, C5",22n,C050-024X044,Ceramic,,,
+1,C6,1n,C050-024X044,Film or ceramic,,,C401093
+1,C7,1uF,CPOL-RADIAL-2.5MM-5MM,"10UF-POLAR-RADIAL-2.5MM-25V-20% Electrolithic, polarized cap, height less than 10mm",,,
+1,D1,1N4148,DO35-7,Diode,1N4148,,C493188
+1,LED1,"3mm, bright!",LED3MM,,L-7104LGD,,C125082
+5,"MOD, POW, RANGE, RES, WAVE",,PB22E07,Push switch with latching PB22E07,PS700L,PB22E07,C2911140
+2,"BATT1, BATT2",AAA,KLS5-817-D,AAA battery holder,KLS5-817-D,,C5290189
+1,J1,AUDIO_JACK_3.5,DCI-ST-033,AUDIO_JACK_3.5MMDCI,,,C179783
+1,T1,BC546A,TO-92-AMMO,TRANSISTOR_PNPBC558,BC546A,,C896668
+1,IC1,MCP6004,DIL14,Operational Amplifier,MCP6004-EP,,C645761
+3,"G1, G2, G3",RED,CHERRY-MX-LED-1U,Cherry MX 1U KB switch,,MX red,
+,,,,,,,
+,,,,,,,
+1,,,DIL14,DIP IC test bed,SCS-14,,C132508
+5,,,,Caps for push switches,,,
+7,,,,Knobs,,,
