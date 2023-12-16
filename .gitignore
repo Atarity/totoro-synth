@@ -1,4 +1,7 @@
 .DS_Store
 /Eagle/*.job
+/Eagle/*.epf
+/Eagle/*.pro
+/Eagle/*.scr
 /Eagle/*.b#*
 /Eagle/*.s#*
