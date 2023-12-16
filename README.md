@@ -16,3 +16,5 @@ In v1.0.1:
 ![Totoro](/Totoro-v101.jpg)
 
 Enjoy the drone.
+
+[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
