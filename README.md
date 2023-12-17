@@ -1,5 +1,5 @@
 # Totoro synth
-Totoro is a portable, analog synth made on top of MCP6004 opamp. It features 2 VCOs (one could act as LFO) and simple VCF.
+Totoro is a portable, analog synth made on top of MCP6004 opamp. It features 2 VCOs (one could act as LFO) and simple VCF. Here it is [a short video demo](https://www.youtube.com/watch?v=yHeWAp9w_LM).
 
 This open-source project based on [original design](https://syntherjack.net/totoro-1-ic-simple-synth/) of SyntherJack's Totoro and published with his permission.
 
