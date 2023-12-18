@@ -9396,8 +9396,8 @@ DIN A3, landscape with extra doc field</description>
 </class>
 </classes>
 <parts>
-<part name="O2FRQ" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
-<part name="BAL" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
+<part name="O2FRQ" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="100k(B)"/>
+<part name="BAL" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="100k(B)"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="1k"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="100k"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="1k"/>
@@ -9431,21 +9431,21 @@ DIN A3, landscape with extra doc field</description>
 <part name="T1" library="User-Submitted" deviceset="TRANSISTOR_PNP" device="BC558" value="BC546A"/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R19" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
-<part name="CUT" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
+<part name="CUT" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="100k(B)"/>
 <part name="M10" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="1uF"/>
-<part name="OLVL" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
+<part name="OLVL" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="100k(A)"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="AUDIO_JACK_3.5MM" device="DCI" value="AUDIO_JACK_3.5MMDCI"/>
-<part name="O1FRQ1" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
+<part name="O1FRQ1" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="100k(B)"/>
 <part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
 <part name="G1" library="SparkFun-Switches" deviceset="MECHANICAL-KEYBOARD" device="1U"/>
-<part name="O1FRQ2" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
+<part name="O1FRQ2" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="100k(B)"/>
 <part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
 <part name="G2" library="SparkFun-Switches" deviceset="MECHANICAL-KEYBOARD" device="1U"/>
 <part name="G3" library="SparkFun-Switches" deviceset="MECHANICAL-KEYBOARD" device="1U"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
-<part name="O1FRQ3" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="10k"/>
+<part name="O1FRQ3" library="SparkFun-Resistors" deviceset="POTENTIOMETER" device="-GATE-SWAPPED" value="100k(B)"/>
 <part name="M3" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="M4" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="100k"/>
@@ -9484,14 +9484,24 @@ DIN A3, landscape with extra doc field</description>
 <text x="39.624" y="8.382" size="5.08" layer="97" font="vector" ratio="4">OSC1</text>
 <text x="212.598" y="7.366" size="5.08" layer="97" font="vector" ratio="4">POWER</text>
 <text x="-7.62" y="175.26" size="5.08" layer="97">Latest design files:  github.com/Atarity/totoro-synth</text>
-<text x="320.04" y="-95.504" size="3.81" layer="94" font="vector" ratio="10">V1.0.1 (2023-12-01)</text>
+<text x="320.04" y="-95.504" size="3.81" layer="94" font="vector" ratio="10">V1.0.1 (2023-12-18)</text>
+<text x="146.558" y="-45.974" size="2.54" layer="97" font="vector" ratio="4">MOD points:
+- M1-2 - generator "sync"
+- M3-4 - keyboard expander
+- M4 - OSC1 output
+- M5-6 - OSC1 range
+- M7 - OSC2 output
+- M8-9 - filter input
+- M10 - filter CV input</text>
 </plain>
 <instances>
 <instance part="O2FRQ" gate="G$1" x="7.62" y="66.04" smashed="yes">
-<attribute name="NAME" x="-1.778" y="66.294" size="1.778" layer="95" font="vector"/>
+<attribute name="NAME" x="-1.524" y="66.802" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="1.524" y="65.532" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 </instance>
 <instance part="BAL" gate="G$1" x="241.3" y="66.04" smashed="yes" rot="MR180">
-<attribute name="NAME" x="244.348" y="66.294" size="1.778" layer="95" font="vector" rot="MR90"/>
+<attribute name="NAME" x="238.506" y="66.548" size="1.778" layer="95" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="235.712" y="65.786" size="1.778" layer="95" font="vector" rot="MR180" align="bottom-center"/>
 </instance>
 <instance part="R1" gate="G$1" x="7.62" y="48.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="6.096" y="48.26" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -9631,7 +9641,8 @@ DIN A3, landscape with extra doc field</description>
 <attribute name="VALUE" x="309.88" y="107.696" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="CUT" gate="G$1" x="325.12" y="109.22" smashed="yes" rot="MR0">
-<attribute name="NAME" x="322.072" y="108.966" size="1.778" layer="95" font="vector" rot="MR270"/>
+<attribute name="NAME" x="328.168" y="111.506" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="330.962" y="106.934" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
 </instance>
 <instance part="M10" gate="G$1" x="312.42" y="96.52" smashed="yes" rot="R180">
 <attribute name="VALUE" x="314.96" y="101.346" size="1.778" layer="96" font="vector" rot="R180"/>
@@ -9642,7 +9653,8 @@ DIN A3, landscape with extra doc field</description>
 <attribute name="VALUE" x="321.564" y="50.927" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="OLVL" gate="G$1" x="337.82" y="35.56" smashed="yes">
-<attribute name="NAME" x="335.026" y="37.592" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="NAME" x="329.692" y="35.814" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="331.978" y="35.052" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY10" gate="GND" x="337.82" y="17.78" smashed="yes">
 <attribute name="VALUE" x="335.915" y="14.605" size="1.778" layer="96"/>
@@ -9652,7 +9664,8 @@ DIN A3, landscape with extra doc field</description>
 <attribute name="VALUE" x="375.92" y="38.1" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="O1FRQ1" gate="G$1" x="60.96" y="-48.26" smashed="yes" rot="MR180">
-<attribute name="NAME" x="51.054" y="-48.768" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="NAME" x="58.166" y="-47.752" size="1.778" layer="95" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="53.848" y="-48.768" size="1.778" layer="95" font="vector" rot="MR180" align="bottom-center"/>
 </instance>
 <instance part="R10" gate="G$1" x="60.96" y="-63.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="57.15" y="-62.992" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -9662,7 +9675,8 @@ DIN A3, landscape with extra doc field</description>
 <attribute name="NAME" x="56.642" y="-74.168" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 </instance>
 <instance part="O1FRQ2" gate="G$1" x="81.28" y="-48.26" smashed="yes" rot="MR180">
-<attribute name="NAME" x="71.374" y="-48.768" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="NAME" x="79.248" y="-47.752" size="1.778" layer="95" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="75.184" y="-48.768" size="1.778" layer="95" font="vector" rot="MR180" align="bottom-center"/>
 </instance>
 <instance part="R11" gate="G$1" x="81.28" y="-63.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="77.724" y="-62.992" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -9679,7 +9693,8 @@ DIN A3, landscape with extra doc field</description>
 <attribute name="VALUE" x="95.25" y="-64.262" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="O1FRQ3" gate="G$1" x="99.06" y="-48.26" smashed="yes" rot="MR180">
-<attribute name="NAME" x="89.154" y="-48.768" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="NAME" x="98.044" y="-47.752" size="1.778" layer="95" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="93.726" y="-48.514" size="1.778" layer="95" font="vector" rot="MR180" align="bottom-center"/>
 </instance>
 <instance part="M3" gate="G$1" x="40.64" y="-38.1" smashed="yes">
 <attribute name="VALUE" x="38.1" y="-42.926" size="1.778" layer="96" font="vector"/>
@@ -10442,6 +10457,10 @@ DIN A3, landscape with extra doc field</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
