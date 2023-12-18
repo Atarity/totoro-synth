@@ -8,7 +8,7 @@ In v1.0.1:
 - Batteries moved on top side of PCB so overall assembly is almost 2 times thinner now
 - Minor layout issues were fixed.
 
-## Useful links
+### Useful links
 - [Bill of Materials v1.0.1](https://docs.google.com/spreadsheets/d/1fobkR_ruTiGQf1n50Jt4_U9o5RTrw8VCa_eaik46wdc/edit?usp=sharing)
 - [Assembly details (RU)](https://snnkv.com/projects/ng-parts-totoro/)
 - [My list of open-source, standalone synths](https://diy-synths.snnkv.com/)
