@@ -10,7 +10,7 @@ In v1.0.1:
 
 ### Useful links
 - [Bill of Materials v1.0.1](https://docs.google.com/spreadsheets/d/1fobkR_ruTiGQf1n50Jt4_U9o5RTrw8VCa_eaik46wdc/edit?usp=sharing)
-- [Assembly details (RU)](https://snnkv.com/projects/ng-parts-totoro/)
+- [Assembly details (RU)](https://snnkv.com/projects/totoro-slim/)
 - [My list of open-source, standalone synths](https://diy-synths.snnkv.com/)
 
 ![Totoro](/Totoro-v101.jpg)
